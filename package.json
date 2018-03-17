@@ -1,0 +1,26 @@
+{
+  "name": "slidefe",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nf start",
+    "build": "react-scripts build",
+    "build-electron": "electron-packager . --ignore=node_modules --prune=true",
+    "test": "react-scripts test --env=jsdom",
+    "electron": "electron .",
+    "electron-start": "node src/electron-wait-react",
+    "react-start": "react-scripts start"
+  },
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-packager": "^11.1.0",
+    "foreman": "^2.0.0"
+  }
+}
