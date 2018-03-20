@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Router
-class Presenter extends Component {
+class Slide2 extends Component {
     render() {
         return (<div className="red">
-            hello Viscira! slide 1
+            hello Viscira! slide 2
         </div>)
     }
 }
-export default Presenter;
+export default Slide2;
