@@ -4,8 +4,13 @@
   "private": true,
   "homepage": "./",
   "dependencies": {
+    "material-ui": "^1.0.0-beta.38",
+    "node-sass": "^4.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-hammerjs": "^1.0.1",
+    "react-router-dom": "^4.2.2",
+    "react-router-native": "^4.2.0",
     "react-scripts": "1.1.1"
   },
   "main": "src/electron-starter.js",
@@ -16,11 +21,20 @@
     "test": "react-scripts test --env=jsdom",
     "electron": "electron .",
     "electron-start": "node src/electron-wait-react",
-    "react-start": "react-scripts start"
+    "react-start": "react-scripts start",
+    "sass-watch": "./node_modules/.bin/node-sass -wr ./src/ -o src/",
+    "sass-build": "./node_modules/.bin/node-sass -r ./src/ -o src/"
   },
   "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-jira-smart-commit": "^3.0.0",
     "electron": "^1.8.4",
     "electron-packager": "^11.1.0",
     "foreman": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-jira-smart-commit"
+    }
   }
 }

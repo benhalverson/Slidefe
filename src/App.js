@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route} from 'react-router-dom';
+// import Presenter from '../src/components/presenter/Presenter';
+import Slide1 from '../src/components/slide1/Slide1';
+import Slide2 from '../src/components/slide2/Slide2';
 import './App.css';
+import Canvas from "./components/Canvas";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-         hello Viscira!
-        </p>
-      </div>
+        <Canvas/>
+        //<BrowserRouter>
+        //   <Route path='/' component={App}/>
+        //</BrowserRouter>
     );
   }
 }
