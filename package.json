@@ -26,8 +26,15 @@
     "sass-build": "./node_modules/.bin/node-sass -r ./src/ -o src/"
   },
   "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-jira-smart-commit": "^3.0.0",
     "electron": "^1.8.4",
     "electron-packager": "^11.1.0",
     "foreman": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-jira-smart-commit"
+    }
   }
 }
