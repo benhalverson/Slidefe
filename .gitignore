@@ -9,6 +9,8 @@
 # production
 /build
 *-darwin-x64
+*.map
+*.css
 
 # misc
 .DS_Store
